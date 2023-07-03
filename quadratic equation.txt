@@ -1,0 +1,27 @@
+import 'dart:math';
+void main(){
+  //значения
+  double a = 1;
+   print('a=$a');
+  double b = 1;
+   print('b=$b');
+  double c = 1;
+   print('c=$c');
+  //уравнение
+  print("$a*x2+$b*x+$c=0");
+  //дискриминант
+  double d = b*b - 4*a*c;
+  print('Дискриминант = $b*$b - 4*$a*$c = $d');
+  if(d>0){
+   double x1 = (-b + sqrt(d)) / 2 * a;
+   double x2 = (-b - sqrt(d)) / 2 * a;
+    print('корни равны: $x1 и $x2');
+  }
+  else if(d==0){
+    double x1 = -b / 2 * a;
+    print('корень равен: $x1 ');
+  }  
+  else{
+   print('Комплексная мудистика'); 
+  }
+}
